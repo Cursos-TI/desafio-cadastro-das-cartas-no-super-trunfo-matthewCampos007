@@ -53,7 +53,7 @@ int main() {
     printf("Nome da Cidade: ");
     scanf(" %[^\n]", nome_da_cidade2);
     printf("População: ");
-    scanf("%d", &populacao2);
+    scanf("%i", &populacao2);
     printf("Área em km²: ");
     scanf("%f", &area_em_km2_2);
     printf("PIB: ");
@@ -97,6 +97,13 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", num_pontos_turisticos2);
     printf("Densidade populacional é: %.2f \n", densidade_populacional2);
     printf("PIB per Capita é %d \n", PIB_per_capita2);
+
+        printf("Comparando População:\n");
+    if (populacao1 > populacao2) {
+        printf("A carta vencedora é: %s (População: %d)\n", nome_da_cidade1, populacao1);
+    } else { 
+        printf("A carta vencedora é: %s (População: %d)\n", nome_da_cidade2, populacao2);
+    }
 
     return 0;
 }
